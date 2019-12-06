@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react"
+import {
+  FaCheck
+} from "react-icons/fa"
 
 const BannerSliderLeft = props => {
   const { title, lead } = props
@@ -30,7 +33,7 @@ const BannerSliderLeft = props => {
                   : `fade-in-left-${index + 1}`
               }`}
             >
-              <i className="fa fa-check"></i>
+              <FaCheck/>
             </span>
             <span
               className={`right-text white_bg tp-resizeme  ${

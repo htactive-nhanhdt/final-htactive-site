@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react"
 import TextCenter from "../TextCenter/TextCenter"
-
+import {
+  FaMobileAlt,
+  FaLaptop,
+  FaGamepad
+} from "react-icons/fa"
 import Home1stCard from "./Home1stCard"
 
 const Home1st = ({ data, language }) => {
@@ -8,7 +12,7 @@ const Home1st = ({ data, language }) => {
   const dataArr = Object.values(dataUse).map(item => item) || []
   const dataBox = dataArr.filter((item, index) => index > 1)
   const [scrollY, setScrollY] = useState(0)
-  const icon = ["fa fa-laptop", "fa fa-mobile", "fa fa-gamepad"]
+  const icon = [FaLaptop, FaMobileAlt, FaGamepad]
   const logit = () => {
     if (window) setScrollY(window.pageYOffset)
   }

@@ -1,5 +1,10 @@
 import React, { useState } from "react"
 import { connect } from "react-redux"
+import {
+  FaMobileAlt,
+  FaLaptop,
+  FaGamepad
+} from "react-icons/fa"
 import "../layoutCss/assets/plugins/style-switcher/style-switcher.css"
 const StyleSwitcher = ({
   data,
@@ -72,11 +77,11 @@ const StyleSwitcher = ({
   }
   return (
     <div>
-      <span className="trigger">
-        <i
-          className={"fa fa-gears " + (toggle === 2 ? "fade-out" : "fade-in")}
-          onClick={() => toggleStyle(2)}
-        ></i>
+      <span
+        className={`trigger ${toggle === 2 ? "fade-out" : "fade-in"}`}
+        onClick={() => toggleStyle(2)}
+      >
+        <FaTools />
       </span>
       <div
         className={
@@ -229,7 +234,4 @@ const mapDispatchToProps = dispatch => {
     changeLayoutRedux: mode => dispatch({ type: `CHANGE_LAYOUT`, mode: mode }),
   }
 }
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(StyleSwitcher)
+export default connect(mapStateToProps, mapDispatchToProps)(StyleSwitcher)

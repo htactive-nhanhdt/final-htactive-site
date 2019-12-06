@@ -4,6 +4,12 @@ import ParagraphLeft from "../Home2nd/ParagraphLeft/ParagraphLeft"
 import { Collapse } from "antd"
 import QueueAnim from "rc-queue-anim"
 import TextCenter from "../TextCenter/TextCenter"
+import {
+  FaGavel,
+  FaStar,
+  FaDollarSign,
+  FaWeixin
+} from "react-icons/fa"
 const { Panel } = Collapse
 export default ({ color, data,language }) => {
   const dataUse = data.frontmatter[`home_2nd_${language}`] || {}
@@ -11,10 +17,10 @@ export default ({ color, data,language }) => {
   const dataPanel = dataArr.filter((item, index) => index >= 3)
   const dataParagraph = dataArr[0]
   const fontAwesome = [
-    "fa fa-gavel customwidth",
-    "fa fa-star customwidth",
-    "fa fa-usd customwidth",
-    "fa fa-weixin customwidth",
+    FaGavel,
+    FaStar,
+    FaDollarSign,
+    FaWeixin,
   ]
   const extraNode = index => <i className={fontAwesome[index]}></i>
   const dataRender = dataPanel.map((item, index) => (
