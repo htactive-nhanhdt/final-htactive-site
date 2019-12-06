@@ -17,7 +17,7 @@ import "./layoutCss/assets/css/carousel.css"
 import "./layoutCss/assets/voc/css/animations.css"
 import "./layoutCss/assets/voc/css/style.css"
 import "./layout.css"
-require("typeface-open-sans")
+
 
 
 
