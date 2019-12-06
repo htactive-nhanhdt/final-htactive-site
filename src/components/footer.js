@@ -2,6 +2,17 @@ import React from "react"
 import NavBar from "./Header/Navbar"
 import { Link } from "gatsby"
 import { connect } from "react-redux"
+import {
+  FaTwitter,
+  FaSkype,
+  FaLinkedinIn,
+  FaGooglePlusG,
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaPhone,
+  FaMobileAlt,
+  FaRegEnvelope
+} from "react-icons/fa"
 
 const Footer = ({ footer, menu, language }) => {
   const engRoute = ["/", "/services/", "/products/", "/blog/", "/contact/"]
@@ -47,27 +58,27 @@ const Footer = ({ footer, menu, language }) => {
                     <ul className="social-links circle">
                       <li className="facebook">
                         <a href="https://www.facebook.com/htactive">
-                          <i className="fa fa-facebook"></i>
+                          <FaFacebookF/>
                         </a>
                       </li>
                       <li className="twitter">
                         <a href="https://twitter.com/hoangvhh">
-                          <i className="fa fa-twitter"></i>
+                          <FaTwitter/>
                         </a>
                       </li>
                       <li className="googleplus">
                         <a href="https://plus.google.com/u/0/117715430853979848085">
-                          <i className="fa fa-google-plus"></i>
+                          <FaGooglePlusG/>
                         </a>
                       </li>
                       <li className="skype">
                         <a href="skype:hoangvhh">
-                          <i className="fa fa-skype"></i>
+                          <FaSkype/>
                         </a>
                       </li>
                       <li className="linkedin">
                         <a href="https://www.linkedin.com/in/hoang-pham-6236b8b7">
-                          <i className="fa fa-linkedin"></i>
+                          <FaLinkedinIn/>
                         </a>
                       </li>
                     </ul>
@@ -75,7 +86,7 @@ const Footer = ({ footer, menu, language }) => {
                   <div className="col-sm-12 col-md-6">
                     <ul className="list-icons">
                       <li>
-                        <i className="fa fa-map-marker pr-10"></i>{" "}
+                        <FaMapMarkerAlt/>
                         <span>
                           150 Duy Tan
                           <br />
@@ -85,14 +96,14 @@ const Footer = ({ footer, menu, language }) => {
                         </span>
                       </li>
                       <li>
-                        <i className="fa fa-phone pr-10"></i> (+84) 905 610 229
+                        <FaPhone/> (+84) 905 610 229
                       </li>
                       <li>
-                        <i className="fa fa-mobile pr-10"></i> (+84) 1227 423
+                        <FaMobileAlt/>(+84) 1227 423
                         919
                       </li>
                       <li>
-                        <i className="fa fa-envelope-o pr-10"></i>
+                        <FaRegEnvelope/>
                         <a className="link" href="mailto:recruit@htactive.com">
                           recruit@htactive.com
                         </a>

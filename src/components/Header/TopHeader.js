@@ -1,6 +1,16 @@
 import React, { useState } from "react"
 import { connect } from "react-redux"
 import { Link } from "gatsby"
+import {
+  FaTwitter,
+  FaSkype,
+  FaLinkedinIn,
+  FaGooglePlusG,
+  FaYoutube,
+  FaFlickr,
+  FaFacebookF,
+  FaPinterest,
+} from "react-icons/fa"
 
 const HeaderTop = ({ language, changeLanguage, active, slug, changeSlug }) => {
   const [openDropdown, setOpenDropdown] = useState(false)
@@ -34,42 +44,42 @@ const HeaderTop = ({ language, changeLanguage, active, slug, changeSlug }) => {
               <ul className="social-links clearfix hidden-xs">
                 <li className="twitter">
                   <a href="https://twitter.com/hoangvhh">
-                    <i className="fa fa-twitter"></i>
+                    <FaTwitter />
                   </a>
                 </li>
                 <li className="skype">
                   <a href="skype:hoangvhh">
-                    <i className="fa fa-skype"></i>
+                    <FaSkype />
                   </a>
                 </li>
                 <li className="linkedin">
                   <a href="https://www.linkedin.com/in/hoang-pham-6236b8b7">
-                    <i className="fa fa-linkedin"></i>
+                    <FaLinkedinIn />
                   </a>
                 </li>
                 <li className="googleplus">
                   <a href="https://plus.google.com/u/0/117715430853979848085">
-                    <i className="fa fa-google-plus"></i>
+                    <FaGooglePlusG />
                   </a>
                 </li>
                 <li className="youtube">
                   <a href="http://www.youtube.com">
-                    <i className="fa fa-youtube-play"></i>
+                    <FaYoutube />
                   </a>
                 </li>
                 <li className="flickr">
                   <a href="https://www.flickr.com/photos/124606867@N06/">
-                    <i className="fa fa-flickr"></i>
+                    <FaFlickr />
                   </a>
                 </li>
                 <li className="facebook">
                   <a href="https://www.facebook.com/htactive">
-                    <i className="fa fa-facebook"></i>
+                    <FaFacebookF />
                   </a>
                 </li>
                 <li className="pinterest">
                   <a href="https://www.pinterest.com/vhhoang/">
-                    <i className="fa fa-pinterest"></i>
+                    <FaPinterest />
                   </a>
                 </li>
               </ul>
@@ -88,42 +98,42 @@ const HeaderTop = ({ language, changeLanguage, active, slug, changeSlug }) => {
                     <ul className="dropdown-menu dropdown-animation">
                       <li className="twitter">
                         <a href="https://twitter.com/hoangvhh">
-                          <i className="fa fa-twitter"></i>
+                          <FaTwitter />
                         </a>
                       </li>
                       <li className="skype">
                         <a href="skype:hoangvhh">
-                          <i className="fa fa-skype"></i>
+                          <FaSkype />
                         </a>
                       </li>
                       <li className="linkedin">
                         <a href="https://www.linkedin.com/in/hoang-pham-6236b8b7">
-                          <i className="fa fa-linkedin"></i>
+                          <FaLinkedinIn />
                         </a>
                       </li>
                       <li className="googleplus">
                         <a href="https://plus.google.com/u/0/117715430853979848085">
-                          <i className="fa fa-google-plus"></i>
+                          <FaGooglePlusG />
                         </a>
                       </li>
                       <li className="youtube">
                         <a href="http://www.youtube.com">
-                          <i className="fa fa-youtube-play"></i>
+                          <FaYoutube />
                         </a>
                       </li>
                       <li className="flickr">
                         <a href="https://www.flickr.com/photos/124606867@N06/">
-                          <i className="fa fa-flickr"></i>
+                          <FaFlickr />
                         </a>
                       </li>
                       <li className="facebook">
                         <a href="https://www.facebook.com/htactive">
-                          <i className="fa fa-facebook"></i>
+                          <FaFacebookF />
                         </a>
                       </li>
                       <li className="pinterest">
                         <a href="https://www.pinterest.com/vhhoang/">
-                          <i className="fa fa-pinterest"></i>
+                          <FaPinterest />
                         </a>
                       </li>
                     </ul>
@@ -213,7 +223,4 @@ const mapDispatchToProps = dispatch => {
     changeSlug: slug => dispatch({ type: `CHANGE_SLUG`, slug: slug }),
   }
 }
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(HeaderTop)
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderTop)
