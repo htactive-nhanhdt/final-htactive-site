@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { connect } from "react-redux"
 import {
-  FaMobileAlt,
-  FaLaptop,
-  FaGamepad
+  FaTimes,
+  FaTools,
+
 } from "react-icons/fa"
 import "../layoutCss/assets/plugins/style-switcher/style-switcher.css"
 const StyleSwitcher = ({
@@ -92,8 +92,8 @@ const StyleSwitcher = ({
         style={{ left: "0px" }}
       >
         <div className="header">
-          <span className="trigger">
-            <i className="fa fa-times" onClick={() => toggleStyle(1)} />
+          <span className="trigger" onClick={() => toggleStyle(1)}>
+          <FaTimes/>
           </span>
           <h2>Style Switcher</h2>
         </div>
