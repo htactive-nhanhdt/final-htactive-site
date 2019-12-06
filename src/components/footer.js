@@ -100,7 +100,7 @@ const Footer = ({ footer, menu, language }) => {
                     </ul>
                   </div>
                 </div>
-                <Link to="/about" className="link-arrow link">
+                <Link to="/contact/" className="link-arrow link">
                   <span>{language === "en" ? "About Us" : "Về chúng tôi"}</span>
                 </Link>
               </div>
