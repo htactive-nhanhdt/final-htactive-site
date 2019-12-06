@@ -3,6 +3,9 @@ import { connect } from "react-redux"
 import {
   FaTimes,
   FaTools,
+  FaRegSquare,
+  FaArrowLeft,
+  FaArrowRight
 
 } from "react-icons/fa"
 import "../layoutCss/assets/plugins/style-switcher/style-switcher.css"
@@ -109,7 +112,7 @@ const StyleSwitcher = ({
               title="dark"
               onClick={() => changeFooter("")}
             >
-              <i className="fa fa-square-o" /> Dark
+              <FaRegSquare/> Dark
             </li>
             <li
               className={"light " + (footer === "light" ? "selected" : "")}
@@ -117,7 +120,7 @@ const StyleSwitcher = ({
               title="light"
               onClick={() => changeFooter("light")}
             >
-              <i className="fa fa-square-o" /> Light
+              <FaRegSquare/>Light
             </li>
           </ul>
           <hr />
@@ -127,13 +130,9 @@ const StyleSwitcher = ({
               className={"wide " + (mode === "wide" ? "selected" : "")}
               onClick={() => changeLayout("wide")}
             >
-              <i
-                className="fa fa-arrow-left pr-10"
-                data-style="wid"
-                title="wide"
-              />
+              <FaArrowLeft className="pr-10"/>
               Wide
-              <i className="fa fa-arrow-right pl-10" />
+              <FaArrowLeft className="pl-10"/>
             </li>
             <li
               className={"boxed " + (mode.includes("boxed") ? "selected" : "")}
