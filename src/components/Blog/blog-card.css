@@ -1,0 +1,109 @@
+.overlay-container {
+  position: relative;
+}
+.overlay-container > div {
+  position: absolute;
+  top: 0;
+}
+.__react_modal_image__header {
+  display: none;
+}
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  z-index: 4000000000 !important;
+  position: absolute !important;
+  background: none !important;
+}
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  width: 100% !important;
+  position: absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+.ReactModal__Content--after-open > div > img {
+  width: 50% !important;
+  height:60%;
+  margin: 0 auto !important;
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+.ReactModal__Content:after {
+  background: #0b0b0b;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 1000vh;
+  top: 0;
+  height: 1000vh;
+  opacity: 0.6;
+}
+.blogpost-content .card-content {
+  height: 95px;
+}
+.day {
+  margin-top: 3px;
+}
+.blog-card-header {
+  height: 120px;
+  position: relative;
+}
+.blog-card-author {
+  position: absolute;
+  top: 75px;
+}
+
+.iframe-small {
+  display: block;
+}
+.open-div img:after {
+  z-index: -1;
+  content: "X";
+  position: absolute;
+}
+.off-modal {
+  cursor: pointer;
+  width: 50% !important;
+  margin: 0 auto !important;
+  position: absolute !important;
+  left: 99%;
+  font-size: 1.4em;
+  color: white;
+  top: 12%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+@media only screen and (max-width: 1250px) {
+  .off-modal {
+    top: 17%;
+}
+}
+@media only screen and (max-width: 1150px) {
+  .off-modal {
+    top: 21%;
+}
+}
+@media only screen and (max-width: 768px) {
+  .ReactModal__Content--after-open > div > img {
+    width: 80% !important;
+  }
+  .off-modal {
+    top: 13%;
+    left: 114%;
+}
+}
+@media only screen and (max-width: 425px) {
+  .off-modal {
+    top: 27%;
+    left: 112%;
+
+}
+}
