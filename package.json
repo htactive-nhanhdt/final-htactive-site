@@ -61,8 +61,8 @@
     "reactstrap": "^8.1.1",
     "redux": "^4.0.4",
     "slug": "^1.1.0",
-    "styled-components": "^4.4.1",
-    "typeface-open-sans": "0.0.75"
+    "styled-components": "^4.4.1"
+
   },
   "devDependencies": {
     "prettier": "^1.18.2"
